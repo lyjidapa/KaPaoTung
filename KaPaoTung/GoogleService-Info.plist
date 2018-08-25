@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1015979740220-c85odghaemtm2f227d17n62v9q33am63.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1015979740220-c85odghaemtm2f227d17n62v9q33am63</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBirB7w_0wvPHwV6YmxjvqYVx0xTm4kOU4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1015979740220</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hanabi.KaPaoTung</string>
+	<key>PROJECT_ID</key>
+	<string>ka-pao-tung-93b4e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ka-pao-tung-93b4e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1015979740220:ios:0fb205a4ce7a9366</string>
+	<key>DATABASE_URL</key>
+	<string>https://ka-pao-tung-93b4e.firebaseio.com</string>
+</dict>
+</plist>
