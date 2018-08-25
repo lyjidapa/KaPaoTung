@@ -14,6 +14,7 @@
 		DB2CFDEB213040A6004ADE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2CFDE9213040A6004ADE81 /* LaunchScreen.storyboard */; };
 		DB2CFDF6213040A6004ADE81 /* KaPaoTungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDF5213040A6004ADE81 /* KaPaoTungTests.swift */; };
 		DB2CFE01213040A6004ADE81 /* KaPaoTungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFE00213040A6004ADE81 /* KaPaoTungUITests.swift */; };
+		DB2CFE0F21310016004ADE81 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2CFE0E21310016004ADE81 /* wallet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		DB2CFDFC213040A6004ADE81 /* KaPaoTungUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaPaoTungUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2CFE00213040A6004ADE81 /* KaPaoTungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaPaoTungUITests.swift; sourceTree = "<group>"; };
 		DB2CFE02213040A6004ADE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2CFE0E21310016004ADE81 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = ../../../Downloads/wallet.png; sourceTree = "<group>"; };
+		DB2CFE11213100DF004ADE81 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		DB2CFDD4213040A4004ADE81 = {
 			isa = PBXGroup;
 			children = (
+				DB2CFE0E21310016004ADE81 /* wallet.png */,
+				DB2CFE10213100D7004ADE81 /* image */,
 				DB2CFDDF213040A4004ADE81 /* KaPaoTung */,
 				DB2CFDF4213040A6004ADE81 /* KaPaoTungTests */,
 				DB2CFDFF213040A6004ADE81 /* KaPaoTungUITests */,
@@ -123,6 +128,14 @@
 				DB2CFE02213040A6004ADE81 /* Info.plist */,
 			);
 			path = KaPaoTungUITests;
+			sourceTree = "<group>";
+		};
+		DB2CFE10213100D7004ADE81 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				DB2CFE11213100DF004ADE81 /* wallet.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +244,7 @@
 			files = (
 				DB2CFDEB213040A6004ADE81 /* LaunchScreen.storyboard in Resources */,
 				DB2CFDE8213040A6004ADE81 /* Assets.xcassets in Resources */,
+				DB2CFE0F21310016004ADE81 /* wallet.png in Resources */,
 				DB2CFDE6213040A4004ADE81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 845SQR869B;
 				INFOPLIST_FILE = KaPaoTung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 845SQR869B;
 				INFOPLIST_FILE = KaPaoTung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
