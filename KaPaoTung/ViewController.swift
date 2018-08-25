@@ -11,21 +11,28 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    
     //components on Main UI
     @IBOutlet weak var textFieldUsername: UITextField!
     @IBOutlet weak var textFieldBalance: UITextField!
     @IBOutlet weak var imgViewSetting: UIImageView!
     @IBOutlet weak var imgViewEyehide: UIImageView!
-    @IBOutlet weak var imgViewTopup: UIImageView!
-    @IBOutlet weak var imgViewTransfer: UIImageView!
-    @IBOutlet weak var imgViewPaybill: UIImageView!
-    @IBOutlet weak var imgViewWithdraw: UIImageView!
-    @IBOutlet weak var imgViewFavorite: UIImageView!
-    @IBOutlet weak var imgViewTransaction: UIImageView!
+    
+    @IBOutlet weak var TopUp: UIView!
+    
+    @IBOutlet weak var Transfer: UIView!
+    
+    @IBOutlet weak var Bill: UIView!
+    
+    @IBOutlet weak var Favorite: UIView!
+    
+    @IBOutlet weak var History: UIView!
+    
     
     //defining firebase reference var
     var refUsers: DatabaseReference!
     
+    @IBOutlet weak var Withdraw: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +45,7 @@ class ViewController: UIViewController {
         textFieldBalance.alpha = 0.5;
         textFieldBalance.isUserInteractionEnabled = false;
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
