@@ -23,6 +23,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgViewFavorite: UIImageView!
     @IBOutlet weak var imgViewTransaction: UIImageView!
     
+    @IBOutlet weak var tf1: PinField!
+    @IBOutlet weak var tf2: PinField!
+    @IBOutlet weak var tf3: PinField!
+    @IBOutlet weak var tf4: PinField!
+    @IBOutlet weak var tf5: PinField!
+    @IBOutlet weak var tf6: PinField!
+    
+    //defining firebase reference var
+    var refUsers: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,6 +44,16 @@ class ViewController: UIViewController {
         textFieldBalance.isUserInteractionEnabled = false;
         
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        tf1.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        tf2.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        tf3.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        tf4.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        tf5.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        tf6.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(goPrevious), name: NSNotification.Name(rawValue: "deletePressed"), object: nil)
         //defining firebase reference var
         let rootRef = Database.database().reference()
         let usersRef = rootRef.child("Users")
@@ -54,7 +74,62 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tf1.becomeFirstResponder()
+    }
+    
+    @objc func goPrevious() {
+        
+        if tf2.isFirstResponder {
+            tf1.isUserInteractionEnabled = true
+            tf1.becomeFirstResponder()
+        } else if tf3.isFirstResponder {
+            tf2.isUserInteractionEnabled = true
+            tf2.becomeFirstResponder()
+        } else if tf4.isFirstResponder {
+            tf3.isUserInteractionEnabled = true
+            tf3.becomeFirstResponder()
+        } else if tf5.isFirstResponder {
+            tf4.isUserInteractionEnabled = true
+            tf4.becomeFirstResponder()
+        } else if tf6.isFirstResponder {
+            tf5.isUserInteractionEnabled = true
+            tf5.becomeFirstResponder()
+        }
+        
+    }
+    
+    @objc func textFieldDidChange(textField: PinField){
+        let text = textField.text
+        print(textField)
+        if text?.utf16.count == 1 {
+            switch textField{
+            case tf1:
+                tf2.becomeFirstResponder()
+                tf1.isUserInteractionEnabled = false
+            case tf2:
+                tf3.becomeFirstResponder()
+                tf2.isUserInteractionEnabled = false
+            case tf3:
+                tf4.becomeFirstResponder()
+                tf3.isUserInteractionEnabled = false
+            case tf4:
+                tf5.becomeFirstResponder()
+                tf4.isUserInteractionEnabled = false
+            case tf5:
+                tf6.becomeFirstResponder()
+                tf5.isUserInteractionEnabled = false
+            case tf6:
+                tf6.resignFirstResponder()
+                tf6.isUserInteractionEnabled = false
+            default:
+                break
+            }
+        } else {
+            
+        }
 
 }
 
