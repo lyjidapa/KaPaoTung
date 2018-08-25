@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("555")
+
         textFieldUsername.backgroundColor = UIColor.white;
         textFieldBalance.backgroundColor = UIColor.white;
         textFieldUsername.alpha = 0.5;
@@ -41,10 +41,9 @@ class ViewController: UIViewController {
         
         currentUser.observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
-            //let name = value?["test"] as? String ?? "eiei2"
             let balanceTemp = value?["balance"] as! Int
             self.textFieldBalance.text = String(balanceTemp)
-            //self.textFieldUsername.text = test
+            self.textFieldUsername.text = "Somchai"
         })
         //let testAdd : NSDictionary = ["balance" : 300 as Int, "test" : "testAdd"]
         //usersRef.setValue(testAdd)
