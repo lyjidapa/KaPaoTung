@@ -17,6 +17,8 @@ target 'KaPaoTung' do
     # Pods for testing
   end
 
-end
-
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+
+end
