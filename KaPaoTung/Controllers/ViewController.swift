@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     
-    
+    //components on Main UI
     @IBOutlet weak var textFieldUsername: UITextField!
     @IBOutlet weak var textFieldBalance: UITextField!
     @IBOutlet weak var imgViewSetting: UIImageView!
@@ -22,8 +23,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgViewFavorite: UIImageView!
     @IBOutlet weak var imgViewTransaction: UIImageView!
     
+    //defining firebase reference var
+    var refUsers: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //FirebaseApp.configure()
+        refUsers = Database.database().reference().child("Users");
+        textFieldUsername.backgroundColor = UIColor.white;
+        textFieldUsername.alpha = 0.5;
+        textFieldUsername.isUserInteractionEnabled = false;
+        textFieldBalance.backgroundColor = UIColor.white;
+        textFieldBalance.alpha = 0.5;
+        textFieldBalance.isUserInteractionEnabled = false;
         // Do any additional setup after loading the view, typically from a nib.
     }
 
