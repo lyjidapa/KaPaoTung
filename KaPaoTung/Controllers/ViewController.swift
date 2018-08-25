@@ -23,22 +23,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgViewFavorite: UIImageView!
     @IBOutlet weak var imgViewTransaction: UIImageView!
     
-    //defining firebase reference var
-    var refUsers: DatabaseReference!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //FirebaseApp.configure()
-        refUsers = Database.database().reference().child("Users");
+        print("555")
         textFieldUsername.backgroundColor = UIColor.white;
-        textFieldUsername.alpha = 0.5;
-        textFieldUsername.isUserInteractionEnabled = false;
         textFieldBalance.backgroundColor = UIColor.white;
+        textFieldUsername.alpha = 0.5;
         textFieldBalance.alpha = 0.5;
+        textFieldUsername.isUserInteractionEnabled = false;
         textFieldBalance.isUserInteractionEnabled = false;
+        
         // Do any additional setup after loading the view, typically from a nib.
+        //defining firebase reference var
+        let rootRef = Database.database().reference()
+        let usersRef = rootRef.child("Users")
+        let currentUser = usersRef.child("Somchai")
+        
+        currentUser.observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            //let name = value?["test"] as? String ?? "eiei2"
+            let balanceTemp = value?["balance"] as! Int
+            self.textFieldBalance.text = String(balanceTemp)
+            //self.textFieldUsername.text = test
+        })
+        //let testAdd : NSDictionary = ["balance" : 300 as Int, "test" : "testAdd"]
+        //usersRef.setValue(testAdd)
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
