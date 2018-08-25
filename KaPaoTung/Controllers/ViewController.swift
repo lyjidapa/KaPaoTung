@@ -35,15 +35,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //FirebaseApp.configure()
-        refUsers = Database.database().reference().child("Users");
+        print("555")
         textFieldUsername.backgroundColor = UIColor.white;
-        textFieldUsername.alpha = 0.5;
-        textFieldUsername.isUserInteractionEnabled = false;
         textFieldBalance.backgroundColor = UIColor.white;
+        textFieldUsername.alpha = 0.5;
         textFieldBalance.alpha = 0.5;
+        textFieldUsername.isUserInteractionEnabled = false;
         textFieldBalance.isUserInteractionEnabled = false;
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -55,7 +54,22 @@ class ViewController: UIViewController {
         tf6.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
         
         NotificationCenter.default.addObserver(self, selector: #selector(goPrevious), name: NSNotification.Name(rawValue: "deletePressed"), object: nil)
+        //defining firebase reference var
+        let rootRef = Database.database().reference()
+        let usersRef = rootRef.child("Users")
+        let currentUser = usersRef.child("Somchai")
+        
+        currentUser.observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            //let name = value?["test"] as? String ?? "eiei2"
+            let balanceTemp = value?["balance"] as! Int
+            self.textFieldBalance.text = String(balanceTemp)
+            //self.textFieldUsername.text = test
+        })
+        //let testAdd : NSDictionary = ["balance" : 300 as Int, "test" : "testAdd"]
+        //usersRef.setValue(testAdd)
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -116,9 +130,7 @@ class ViewController: UIViewController {
             }
         } else {
             
-            
         }
-
 
 }
 
