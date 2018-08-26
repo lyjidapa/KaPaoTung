@@ -10,6 +10,6 @@ The system makes elders everyday-life payment easier such as withdrawing, paying
 become more convenient by introducing cashless society. The main functions and features of this system are as follows.
 
 **Ka Pao Tung** is an iOS apps and should be runned with XCode.
-Notr that the QR scanner work on iOS devices only (not work on simulator).
+Note that the QR scanner work on iOS devices only (not work on simulator).
 
 *This project was part of Hack Your Tech 2018.*
