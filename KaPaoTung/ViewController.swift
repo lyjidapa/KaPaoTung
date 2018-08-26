@@ -18,26 +18,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgViewSetting: UIImageView!
     @IBOutlet weak var imgViewEyehide: UIImageView!
     
+
+    
     @IBOutlet weak var TopUp: UIView!
-    
     @IBOutlet weak var Transfer: UIView!
-    
     @IBOutlet weak var Bill: UIView!
-    
     @IBOutlet weak var Favorite: UIView!
-    
     @IBOutlet weak var History: UIView!
+    @IBOutlet weak var withdrawn: UIView!
     
-    
-<<<<<<< HEAD:KaPaoTung/ViewController.swift
     //defining firebase reference var
     var refUsers: DatabaseReference!
     
     @IBOutlet weak var Withdraw: UIView!
-=======
->>>>>>> 7330e7ebf948b191c36f9272cd60f70b7cc75450:KaPaoTung/Controllers/ViewController.swift
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TopUp.layer.cornerRadius = 20.0
+        Transfer.layer.cornerRadius = 20.0
+        Bill.layer.cornerRadius = 20.0
+        Favorite.layer.cornerRadius = 20.0
+        History.layer.cornerRadius = 20.0
+        withdrawn.layer.cornerRadius = 20.0
+        
 
         textFieldUsername.backgroundColor = UIColor.white;
         textFieldBalance.backgroundColor = UIColor.white;
@@ -47,9 +51,7 @@ class ViewController: UIViewController {
         textFieldBalance.isUserInteractionEnabled = false;
         
         // Do any additional setup after loading the view, typically from a nib.
-<<<<<<< HEAD:KaPaoTung/ViewController.swift
-        
-=======
+
         //defining firebase reference var
         let rootRef = Database.database().reference()
         let usersRef = rootRef.child("Users")
@@ -63,7 +65,8 @@ class ViewController: UIViewController {
         })
         //let testAdd : NSDictionary = ["balance" : 300 as Int, "test" : "testAdd"]
         //usersRef.setValue(testAdd)
->>>>>>> 7330e7ebf948b191c36f9272cd60f70b7cc75450:KaPaoTung/Controllers/ViewController.swift
+        
+
     }
 
 

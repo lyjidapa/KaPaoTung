@@ -18,27 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="KA PAO TUNG" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-TH-9uF">
-                                <rect key="frame" x="42" y="405" width="290" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KA PAO TUNG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5R-i7-7R2">
+                                <rect key="frame" x="92" y="386" width="191" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet.png" translatesAutoresizingMaskIntoConstraints="NO" id="z11-Dm-5ZA">
-                                <rect key="frame" x="85" y="191" width="204" height="185"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Artboard_trans" translatesAutoresizingMaskIntoConstraints="NO" id="0Pr-Yl-lx0">
+                                <rect key="frame" x="67" y="138" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="s4t-TH-9uF" firstAttribute="top" secondItem="z11-Dm-5ZA" secondAttribute="bottom" constant="29" id="7Vq-zW-aPf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s4t-TH-9uF" secondAttribute="bottom" constant="232" id="8lA-V8-xk2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z11-Dm-5ZA" secondAttribute="bottom" constant="291" id="YhH-9I-FiO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s4t-TH-9uF" secondAttribute="trailing" constant="43" id="ZCX-eT-W4C"/>
-                            <constraint firstItem="s4t-TH-9uF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="apD-f9-uSw"/>
-                            <constraint firstItem="z11-Dm-5ZA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="cTT-hV-BGX"/>
-                            <constraint firstItem="z11-Dm-5ZA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="lla-JJ-BKZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z11-Dm-5ZA" secondAttribute="trailing" constant="86" id="sFr-1c-qxT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -48,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="wallet.png" width="128" height="128"/>
+        <image name="Artboard_trans" width="1024" height="1024"/>
     </resources>
 </document>

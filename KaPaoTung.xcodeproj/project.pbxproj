@@ -10,6 +10,10 @@
 		195A84E424289E929CAF44F0 /* Pods_KaPaoTung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A8408F926D8D2AB8437845 /* Pods_KaPaoTung.framework */; };
 		1D682429E980364075C46DFE /* Pods_KaPaoTungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A27361A5B6A03CB961EFE45 /* Pods_KaPaoTungTests.framework */; };
 		4B4AE7FBC46EBF259008E030 /* Pods_KaPaoTungUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BF80435BE2E8A334E7ABC /* Pods_KaPaoTungUITests.framework */; };
+		D3EDD0B02131DBF3004A52ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3EDD0AF2131DBF2004A52ED /* GoogleService-Info.plist */; };
+		D3EDD0B42131DF40004A52ED /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD0B32131DF3F004A52ED /* QRScannerController.swift */; };
+		D3EDD0B82131E9ED004A52ED /* PinField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD0B72131E9ED004A52ED /* PinField.swift */; };
+		D3EDD0BA2131EF59004A52ED /* PinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD0B92131EF59004A52ED /* PinController.swift */; };
 		DB2CFDE1213040A4004ADE81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDE0213040A4004ADE81 /* AppDelegate.swift */; };
 		DB2CFDE3213040A4004ADE81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDE2213040A4004ADE81 /* ViewController.swift */; };
 		DB2CFDE6213040A4004ADE81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2CFDE4213040A4004ADE81 /* Main.storyboard */; };
@@ -18,8 +22,6 @@
 		DB2CFDF6213040A6004ADE81 /* KaPaoTungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDF5213040A6004ADE81 /* KaPaoTungTests.swift */; };
 		DB2CFE01213040A6004ADE81 /* KaPaoTungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFE00213040A6004ADE81 /* KaPaoTungUITests.swift */; };
 		DB78BA342131834C00FF0DF6 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB78BA332131834B00FF0DF6 /* LocalAuthentication.framework */; };
-		DB78BA362131AFCD00FF0DF6 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = DB78BA352131AFB600FF0DF6 /* wallet.png */; };
-		DB78BA382131B20500FF0DF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB78BA372131B20500FF0DF6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		C1056AF14B87DB09CD011285 /* Pods-KaPaoTung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTung.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTung/Pods-KaPaoTung.debug.xcconfig"; sourceTree = "<group>"; };
 		C2F45FD554426EE9927F8330 /* Pods-KaPaoTung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTung.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTung/Pods-KaPaoTung.release.xcconfig"; sourceTree = "<group>"; };
 		D04BF80435BE2E8A334E7ABC /* Pods_KaPaoTungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaPaoTungUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3EDD0AF2131DBF2004A52ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3EDD0B32131DF3F004A52ED /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRScannerController.swift; path = ../../../../Desktop/QRCodeReader/QRCodeReader/QRScannerController.swift; sourceTree = "<group>"; };
+		D3EDD0B72131E9ED004A52ED /* PinField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinField.swift; path = ../../KaPaoTung2/KaPaoTung2/PinField.swift; sourceTree = "<group>"; };
+		D3EDD0B92131EF59004A52ED /* PinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinController.swift; path = ../KaPaoTung2/KaPaoTung2/PinController.swift; sourceTree = SOURCE_ROOT; };
 		DB2CFDDD213040A4004ADE81 /* KaPaoTung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaPaoTung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2CFDE0213040A4004ADE81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2CFDE2213040A4004ADE81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +69,6 @@
 		DB2CFE00213040A6004ADE81 /* KaPaoTungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaPaoTungUITests.swift; sourceTree = "<group>"; };
 		DB2CFE02213040A6004ADE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB78BA332131834B00FF0DF6 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
-		DB78BA352131AFB600FF0DF6 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = ../../../image/wallet.png; sourceTree = "<group>"; };
-		DB78BA372131B20500FF0DF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,13 +138,15 @@
 		DB2CFDDF213040A4004ADE81 /* KaPaoTung */ = {
 			isa = PBXGroup;
 			children = (
-				DB78BA372131B20500FF0DF6 /* GoogleService-Info.plist */,
 				DB2CFDE0213040A4004ADE81 /* AppDelegate.swift */,
 				DB2CFDE2213040A4004ADE81 /* ViewController.swift */,
+				D3EDD0B92131EF59004A52ED /* PinController.swift */,
+				D3EDD0B72131E9ED004A52ED /* PinField.swift */,
+				D3EDD0B32131DF3F004A52ED /* QRScannerController.swift */,
+				D3EDD0AF2131DBF2004A52ED /* GoogleService-Info.plist */,
 				DB2CFDE4213040A4004ADE81 /* Main.storyboard */,
 				DB2CFDE7213040A6004ADE81 /* Assets.xcassets */,
 				DB2CFDE9213040A6004ADE81 /* LaunchScreen.storyboard */,
-				DB78BA352131AFB600FF0DF6 /* wallet.png */,
 				DB2CFDEC213040A6004ADE81 /* Info.plist */,
 			);
 			path = KaPaoTung;
@@ -285,9 +291,8 @@
 			files = (
 				DB2CFDEB213040A6004ADE81 /* LaunchScreen.storyboard in Resources */,
 				DB2CFDE8213040A6004ADE81 /* Assets.xcassets in Resources */,
-				DB78BA382131B20500FF0DF6 /* GoogleService-Info.plist in Resources */,
-				DB78BA362131AFCD00FF0DF6 /* wallet.png in Resources */,
 				DB2CFDE6213040A4004ADE81 /* Main.storyboard in Resources */,
+				D3EDD0B02131DBF3004A52ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EDD0BA2131EF59004A52ED /* PinController.swift in Sources */,
+				D3EDD0B82131E9ED004A52ED /* PinField.swift in Sources */,
 				DB2CFDE3213040A4004ADE81 /* ViewController.swift in Sources */,
 				DB2CFDE1213040A4004ADE81 /* AppDelegate.swift in Sources */,
+				D3EDD0B42131DF40004A52ED /* QRScannerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,14 +577,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 845SQR869B;
+				DEVELOPMENT_TEAM = JB9P82QR98;
 				INFOPLIST_FILE = KaPaoTung/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lyjidapa.KaPaoTung;
+				PRODUCT_BUNDLE_IDENTIFIER = chitipat.KaPaoTung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -589,14 +597,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 845SQR869B;
+				DEVELOPMENT_TEAM = JB9P82QR98;
 				INFOPLIST_FILE = KaPaoTung/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lyjidapa.KaPaoTung;
+				PRODUCT_BUNDLE_IDENTIFIER = chitipat.KaPaoTung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
