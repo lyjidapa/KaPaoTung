@@ -1,0 +1,6 @@
+framework module Pods_KaPaoTungUITests {
+  umbrella header "Pods-KaPaoTungUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

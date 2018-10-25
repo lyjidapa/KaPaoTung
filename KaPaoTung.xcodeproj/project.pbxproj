@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195A84E424289E929CAF44F0 /* Pods_KaPaoTung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A8408F926D8D2AB8437845 /* Pods_KaPaoTung.framework */; };
+		1D682429E980364075C46DFE /* Pods_KaPaoTungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A27361A5B6A03CB961EFE45 /* Pods_KaPaoTungTests.framework */; };
+		4B4AE7FBC46EBF259008E030 /* Pods_KaPaoTungUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BF80435BE2E8A334E7ABC /* Pods_KaPaoTungUITests.framework */; };
+		D3EDD0B02131DBF3004A52ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3EDD0AF2131DBF2004A52ED /* GoogleService-Info.plist */; };
+		D3EDD0B42131DF40004A52ED /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD0B32131DF3F004A52ED /* QRScannerController.swift */; };
+		D3EDD0B82131E9ED004A52ED /* PinField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD0B72131E9ED004A52ED /* PinField.swift */; };
+		D3EDD0BA2131EF59004A52ED /* PinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD0B92131EF59004A52ED /* PinController.swift */; };
 		DB2CFDE1213040A4004ADE81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDE0213040A4004ADE81 /* AppDelegate.swift */; };
 		DB2CFDE3213040A4004ADE81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDE2213040A4004ADE81 /* ViewController.swift */; };
 		DB2CFDE6213040A4004ADE81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2CFDE4213040A4004ADE81 /* Main.storyboard */; };
@@ -14,7 +21,7 @@
 		DB2CFDEB213040A6004ADE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2CFDE9213040A6004ADE81 /* LaunchScreen.storyboard */; };
 		DB2CFDF6213040A6004ADE81 /* KaPaoTungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFDF5213040A6004ADE81 /* KaPaoTungTests.swift */; };
 		DB2CFE01213040A6004ADE81 /* KaPaoTungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CFE00213040A6004ADE81 /* KaPaoTungUITests.swift */; };
-		DB2CFE0F21310016004ADE81 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2CFE0E21310016004ADE81 /* wallet.png */; };
+		DB78BA342131834C00FF0DF6 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB78BA332131834B00FF0DF6 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C8F4BAB553C660CC1E0E999 /* Pods-KaPaoTungUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTungUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTungUITests/Pods-KaPaoTungUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2462DFBD75D20B7FA17BB344 /* Pods-KaPaoTungUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTungUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTungUITests/Pods-KaPaoTungUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CDB0A8E80F9D6AD69A8A640 /* Pods-KaPaoTungTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTungTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTungTests/Pods-KaPaoTungTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A27361A5B6A03CB961EFE45 /* Pods_KaPaoTungTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaPaoTungTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1006C3679DC927858DA66C /* Pods-KaPaoTungTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTungTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTungTests/Pods-KaPaoTungTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A8408F926D8D2AB8437845 /* Pods_KaPaoTung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaPaoTung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1056AF14B87DB09CD011285 /* Pods-KaPaoTung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTung.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTung/Pods-KaPaoTung.debug.xcconfig"; sourceTree = "<group>"; };
+		C2F45FD554426EE9927F8330 /* Pods-KaPaoTung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaPaoTung.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaPaoTung/Pods-KaPaoTung.release.xcconfig"; sourceTree = "<group>"; };
+		D04BF80435BE2E8A334E7ABC /* Pods_KaPaoTungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaPaoTungUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3EDD0AF2131DBF2004A52ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3EDD0B32131DF3F004A52ED /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRScannerController.swift; path = ../../../../Desktop/QRCodeReader/QRCodeReader/QRScannerController.swift; sourceTree = "<group>"; };
+		D3EDD0B72131E9ED004A52ED /* PinField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinField.swift; path = ../../KaPaoTung2/KaPaoTung2/PinField.swift; sourceTree = "<group>"; };
+		D3EDD0B92131EF59004A52ED /* PinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinController.swift; path = ../KaPaoTung2/KaPaoTung2/PinController.swift; sourceTree = SOURCE_ROOT; };
 		DB2CFDDD213040A4004ADE81 /* KaPaoTung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaPaoTung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2CFDE0213040A4004ADE81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2CFDE2213040A4004ADE81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +68,7 @@
 		DB2CFDFC213040A6004ADE81 /* KaPaoTungUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaPaoTungUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2CFE00213040A6004ADE81 /* KaPaoTungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaPaoTungUITests.swift; sourceTree = "<group>"; };
 		DB2CFE02213040A6004ADE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB2CFE0E21310016004ADE81 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = ../../../Downloads/wallet.png; sourceTree = "<group>"; };
-		DB2CFE11213100DF004ADE81 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
+		DB78BA332131834B00FF0DF6 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB78BA342131834C00FF0DF6 /* LocalAuthentication.framework in Frameworks */,
+				195A84E424289E929CAF44F0 /* Pods_KaPaoTung.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D682429E980364075C46DFE /* Pods_KaPaoTungTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,21 +93,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4AE7FBC46EBF259008E030 /* Pods_KaPaoTungUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3226280929201D3E4F4E635B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1056AF14B87DB09CD011285 /* Pods-KaPaoTung.debug.xcconfig */,
+				C2F45FD554426EE9927F8330 /* Pods-KaPaoTung.release.xcconfig */,
+				7F1006C3679DC927858DA66C /* Pods-KaPaoTungTests.debug.xcconfig */,
+				2CDB0A8E80F9D6AD69A8A640 /* Pods-KaPaoTungTests.release.xcconfig */,
+				2462DFBD75D20B7FA17BB344 /* Pods-KaPaoTungUITests.debug.xcconfig */,
+				1C8F4BAB553C660CC1E0E999 /* Pods-KaPaoTungUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB2CFDD4213040A4004ADE81 = {
 			isa = PBXGroup;
 			children = (
-				DB2CFE0E21310016004ADE81 /* wallet.png */,
-				DB2CFE10213100D7004ADE81 /* image */,
 				DB2CFDDF213040A4004ADE81 /* KaPaoTung */,
 				DB2CFDF4213040A6004ADE81 /* KaPaoTungTests */,
 				DB2CFDFF213040A6004ADE81 /* KaPaoTungUITests */,
 				DB2CFDDE213040A4004ADE81 /* Products */,
+				3226280929201D3E4F4E635B /* Pods */,
+				ECEB0C9F9EA77A82A770ECF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +140,10 @@
 			children = (
 				DB2CFDE0213040A4004ADE81 /* AppDelegate.swift */,
 				DB2CFDE2213040A4004ADE81 /* ViewController.swift */,
+				D3EDD0B92131EF59004A52ED /* PinController.swift */,
+				D3EDD0B72131E9ED004A52ED /* PinField.swift */,
+				D3EDD0B32131DF3F004A52ED /* QRScannerController.swift */,
+				D3EDD0AF2131DBF2004A52ED /* GoogleService-Info.plist */,
 				DB2CFDE4213040A4004ADE81 /* Main.storyboard */,
 				DB2CFDE7213040A6004ADE81 /* Assets.xcassets */,
 				DB2CFDE9213040A6004ADE81 /* LaunchScreen.storyboard */,
@@ -130,12 +170,15 @@
 			path = KaPaoTungUITests;
 			sourceTree = "<group>";
 		};
-		DB2CFE10213100D7004ADE81 /* image */ = {
+		ECEB0C9F9EA77A82A770ECF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB2CFE11213100DF004ADE81 /* wallet.png */,
+				DB78BA332131834B00FF0DF6 /* LocalAuthentication.framework */,
+				C0A8408F926D8D2AB8437845 /* Pods_KaPaoTung.framework */,
+				4A27361A5B6A03CB961EFE45 /* Pods_KaPaoTungTests.framework */,
+				D04BF80435BE2E8A334E7ABC /* Pods_KaPaoTungUITests.framework */,
 			);
-			path = image;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2CFE05213040A6004ADE81 /* Build configuration list for PBXNativeTarget "KaPaoTung" */;
 			buildPhases = (
+				C2434BDC6DC7266CF252B847 /* [CP] Check Pods Manifest.lock */,
 				DB2CFDD9213040A4004ADE81 /* Sources */,
 				DB2CFDDA213040A4004ADE81 /* Frameworks */,
 				DB2CFDDB213040A4004ADE81 /* Resources */,
+				BB11073FBE25CD9875212ECF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2CFE08213040A6004ADE81 /* Build configuration list for PBXNativeTarget "KaPaoTungTests" */;
 			buildPhases = (
+				1026CD16E80D5C1CC30454BA /* [CP] Check Pods Manifest.lock */,
 				DB2CFDED213040A6004ADE81 /* Sources */,
 				DB2CFDEE213040A6004ADE81 /* Frameworks */,
 				DB2CFDEF213040A6004ADE81 /* Resources */,
@@ -180,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2CFE0B213040A6004ADE81 /* Build configuration list for PBXNativeTarget "KaPaoTungUITests" */;
 			buildPhases = (
+				77D4700E14D4384757FC02AB /* [CP] Check Pods Manifest.lock */,
 				DB2CFDF8213040A6004ADE81 /* Sources */,
 				DB2CFDF9213040A6004ADE81 /* Frameworks */,
 				DB2CFDFA213040A6004ADE81 /* Resources */,
@@ -244,8 +291,8 @@
 			files = (
 				DB2CFDEB213040A6004ADE81 /* LaunchScreen.storyboard in Resources */,
 				DB2CFDE8213040A6004ADE81 /* Assets.xcassets in Resources */,
-				DB2CFE0F21310016004ADE81 /* wallet.png in Resources */,
 				DB2CFDE6213040A4004ADE81 /* Main.storyboard in Resources */,
+				D3EDD0B02131DBF3004A52ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,13 +312,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1026CD16E80D5C1CC30454BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaPaoTungTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D4700E14D4384757FC02AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaPaoTungUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB11073FBE25CD9875212ECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KaPaoTung/Pods-KaPaoTung-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KaPaoTung/Pods-KaPaoTung-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2434BDC6DC7266CF252B847 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaPaoTung-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB2CFDD9213040A4004ADE81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EDD0BA2131EF59004A52ED /* PinController.swift in Sources */,
+				D3EDD0B82131E9ED004A52ED /* PinField.swift in Sources */,
 				DB2CFDE3213040A4004ADE81 /* ViewController.swift in Sources */,
 				DB2CFDE1213040A4004ADE81 /* AppDelegate.swift in Sources */,
+				D3EDD0B42131DF40004A52ED /* QRScannerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,42 +573,47 @@
 		};
 		DB2CFE06213040A6004ADE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1056AF14B87DB09CD011285 /* Pods-KaPaoTung.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 845SQR869B;
+				DEVELOPMENT_TEAM = JB9P82QR98;
 				INFOPLIST_FILE = KaPaoTung/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lyjidapa.KaPaoTung;
+				PRODUCT_BUNDLE_IDENTIFIER = chitipat.KaPaoTung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DB2CFE07213040A6004ADE81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F45FD554426EE9927F8330 /* Pods-KaPaoTung.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 845SQR869B;
+				DEVELOPMENT_TEAM = JB9P82QR98;
 				INFOPLIST_FILE = KaPaoTung/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lyjidapa.KaPaoTung;
+				PRODUCT_BUNDLE_IDENTIFIER = chitipat.KaPaoTung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		DB2CFE09213040A6004ADE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1006C3679DC927858DA66C /* Pods-KaPaoTungTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +634,7 @@
 		};
 		DB2CFE0A213040A6004ADE81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CDB0A8E80F9D6AD69A8A640 /* Pods-KaPaoTungTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +655,7 @@
 		};
 		DB2CFE0C213040A6004ADE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2462DFBD75D20B7FA17BB344 /* Pods-KaPaoTungUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +675,7 @@
 		};
 		DB2CFE0D213040A6004ADE81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8F4BAB553C660CC1E0E999 /* Pods-KaPaoTungUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
